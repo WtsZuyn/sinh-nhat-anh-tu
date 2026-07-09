@@ -9,23 +9,24 @@ import {
   MessageSquare, MapPin, Shield, Lock, X as XIcon,
 } from 'lucide-react';
 
-// ── Memory photo imports (exact filenames preserved) ──
-import img01 from '../imports/memory-01.PNG';
-import img02 from '../imports/memory-02.jpg';
-import img03 from '../imports/memory-03.PNG';
-import img04 from '../imports/memory-04.png';
-import img05 from '../imports/memory-05..jpg';
-import img06 from '../imports/memory-06.PNG';
-import img07 from '../imports/memory-07.JPG';
-import img08 from '../imports/memory-08.jpg';
-import img09 from '../imports/memory-09.jpg';
-import img10 from '../imports/memory-10.JPG';
-import img11 from '../imports/memory-11.jpg';
-import img12 from '../imports/memory-12.jpg';
-import birthdayVideo from '../imports/birthday-video.mp4';
-import musicSrc from '../imports/khieu-vu-trong-tranh.mp3';
-
-const MEMORY_SRCS = [img01, img02, img03, img04, img05, img06, img07, img08, img09, img10, img11, img12];
+// ── Static asset paths (served from /public/assets/) ──
+const BASE = import.meta.env.BASE_URL.replace(/\/$/, '');
+const MEMORY_SRCS = [
+  `${BASE}/assets/memory-01.PNG`,
+  `${BASE}/assets/memory-02.jpg`,
+  `${BASE}/assets/memory-03.PNG`,
+  `${BASE}/assets/memory-04.png`,
+  `${BASE}/assets/memory-05..jpg`,
+  `${BASE}/assets/memory-06.PNG`,
+  `${BASE}/assets/memory-07.JPG`,
+  `${BASE}/assets/memory-08.jpg`,
+  `${BASE}/assets/memory-09.jpg`,
+  `${BASE}/assets/memory-10.JPG`,
+  `${BASE}/assets/memory-11.jpg`,
+  `${BASE}/assets/memory-12.jpg`,
+];
+const birthdayVideo = `${BASE}/assets/birthday-video.mp4`;
+const musicSrc = `${BASE}/assets/khieu-vu-trong-tranh.mp3`;
 
 // ═══════════════════════════════════════════
 // CONTEXT
